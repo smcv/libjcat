@@ -1,0 +1,4 @@
+version=3
+opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/libjcat-$1\.tar\.gz/ \
+https://github.com/hughsie/libjcat/tags .*/v?(\d\S*)\.tar\.gz
+
