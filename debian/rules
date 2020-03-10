@@ -5,3 +5,7 @@
 
 override_dh_auto_configure:
 	dh_auto_configure -- -Dgtkdoc=true
+
+override_dh_install:
+	dh_install
+	dh_missing -a --fail-missing

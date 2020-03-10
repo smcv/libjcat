@@ -1,0 +1,4 @@
+usr/bin
+usr/share/man
+usr/share/installed-tests
+usr/lib/*/installed-tests

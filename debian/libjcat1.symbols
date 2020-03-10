@@ -14,18 +14,21 @@ libjcat.so.1 libjcat1 #MINVER#
  jcat_blob_new_utf8@LIBJCAT_0.1.0 0.0.1
  jcat_blob_set_appstream_id@LIBJCAT_0.1.0 0.0.1
  jcat_blob_set_timestamp@LIBJCAT_0.1.0 0.0.1
+ jcat_blob_to_string@LIBJCAT_0.1.0 0.0.1
+ jcat_context_add_public_key@LIBJCAT_0.1.0 0.0.1
  jcat_context_add_public_keys@LIBJCAT_0.1.0 0.0.1
  jcat_context_get_engine@LIBJCAT_0.1.0 0.0.1
+ jcat_context_get_keyring_path@LIBJCAT_0.1.0 0.0.1
  jcat_context_get_type@LIBJCAT_0.1.0 0.0.1
  jcat_context_new@LIBJCAT_0.1.0 0.0.1
- jcat_context_set_localstatedir@LIBJCAT_0.1.0 0.0.1
- jcat_context_setup@LIBJCAT_0.1.0 0.0.1
- jcat_context_sign@LIBJCAT_0.1.0 0.0.1
+ jcat_context_set_keyring_path@LIBJCAT_0.1.0 0.0.1
  jcat_context_verify_blob@LIBJCAT_0.1.0 0.0.1
  jcat_context_verify_item@LIBJCAT_0.1.0 0.0.1
  jcat_engine_get_type@LIBJCAT_0.1.0 0.0.1
- jcat_engine_sign@LIBJCAT_0.1.0 0.0.1
- jcat_engine_verify@LIBJCAT_0.1.0 0.0.1
+ jcat_engine_pubkey_sign@LIBJCAT_0.1.0 0.0.1
+ jcat_engine_pubkey_verify@LIBJCAT_0.1.0 0.0.1
+ jcat_engine_self_sign@LIBJCAT_0.1.0 0.0.1
+ jcat_engine_self_verify@LIBJCAT_0.1.0 0.0.1
  jcat_file_add_item@LIBJCAT_0.1.0 0.0.1
  jcat_file_export_file@LIBJCAT_0.1.0 0.0.1
  jcat_file_export_json@LIBJCAT_0.1.0 0.0.1
@@ -47,6 +50,8 @@ libjcat.so.1 libjcat1 #MINVER#
  jcat_item_get_id@LIBJCAT_0.1.0 0.0.1
  jcat_item_get_type@LIBJCAT_0.1.0 0.0.1
  jcat_item_new@LIBJCAT_0.1.0 0.0.1
+ jcat_item_to_string@LIBJCAT_0.1.0 0.0.1
  jcat_result_get_authority@LIBJCAT_0.1.0 0.0.1
  jcat_result_get_timestamp@LIBJCAT_0.1.0 0.0.1
  jcat_result_get_type@LIBJCAT_0.1.0 0.0.1
+ jcat_result_to_string@LIBJCAT_0.1.0 0.0.1

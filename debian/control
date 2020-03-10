@@ -27,7 +27,7 @@ Package: gir1.2-jcat-1.0
 Architecture: linux-any
 Multi-Arch: same
 Depends: ${misc:Depends},
-         ${gir:Depends}
+	 ${gir:Depends},
 Section: introspection
 Description: GObject introspection data for libjcat
  This package provides the introspection data for libjcat.
@@ -40,7 +40,8 @@ Section: libdevel
 Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends},
+	 gir1.2-jcat-1.0 (= ${binary:Version}),
 Description: development files for libjcat
  This package provides development libraries for libjcat.
  .
@@ -55,6 +56,17 @@ Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: JSON catalog library
- The libjcat library assembles checksum and metadata into a JSON based catalog.
+ The libjcat library assembles checksums and metadata into a JSON based catalog.
  .
  This is used by other software to validate metadata.
+
+Package: jcat
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Multi-Arch: foreign
+Description: JSON catalog tool
+ The JSON catalog tool is used for assmelbing metadata and checksums into a JSON
+ based catalog.
+ .
+ This package provides a command line tool to work directly with .jcat files.
